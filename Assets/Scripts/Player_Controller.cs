@@ -1,19 +1,19 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player_Controller : MonoBehaviour
 {
-
     public float speed;
 
     private Rigidbody rb;
 
-    void Start()
+    void Start ()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void FixedUpdate ()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
